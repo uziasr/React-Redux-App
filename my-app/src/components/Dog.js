@@ -1,7 +1,9 @@
 import React from 'react'
 
-const Dog = () =>{
+const Dog = (props) =>{
+    console.log(props)
     return(
-        <h1>Hey look a dog!</h1>
+        <img src={props.dog}/>
     )
 }
+export default Dog
