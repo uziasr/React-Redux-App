@@ -1,9 +1,14 @@
 import React from 'react'
 
 const Dog = (props) =>{
-    console.log(props)
+    const dogBreed = props.dog.split('/')[4].split('-').join(' ')
+
     return(
-        <img src={props.dog}/>
+        <>
+            <h2>{dogBreed}</h2>
+            <img src={props.dog}/>
+        </>
+
     )
 }
 export default Dog
